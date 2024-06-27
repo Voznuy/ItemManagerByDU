@@ -108,8 +108,13 @@ export default function CreateHandlerPlus() {
                         label="Служба *"
                         onChange={handleServiceChange}
                     >
-                        <MenuItem value={"СЗ"}>Служба звязку</MenuItem>
-                        <MenuItem value={"ВНЛЗ"}>ВНЛЗ</MenuItem>
+                        <MenuItem value={"ПС"}>Пожежна служба</MenuItem>
+                        <MenuItem value={"СЗ"}>Служба зв'язку</MenuItem>
+                        <MenuItem value={"СІЗ"}>Служба інфраструктурного забезпечення</MenuItem>
+                        <MenuItem value={"РС"}>Речова служба</MenuItem>
+                        <MenuItem value={"РАО"}>РАО</MenuItem>
+                        <MenuItem value={"ТЗО"}>ТЗО</MenuItem>
+                        <MenuItem value={"МС"}>Медична служба</MenuItem>
                     </Select>
                 </FormControl>
                 <Typography variant="h6" sx={{marginTop: '15px'}}>Необов'язково</Typography>

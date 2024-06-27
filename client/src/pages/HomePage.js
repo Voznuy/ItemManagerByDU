@@ -12,7 +12,6 @@ function HomePage() {
     return (
         <StoreProvider>
             <Header/>
-            <SearchFilterBlock/>
             <TotalInfo/>
             <ItemList/>
             <MessageHandler />

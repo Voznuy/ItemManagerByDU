@@ -46,7 +46,7 @@ export const StoreProvider = (({children}) => {
                     }
                     if (!!noService) {
                         // filter elements thatare not related neither to VNLZ nor SZ
-                        passNoService = item.service_number !== 1 && item.service_number !== 2
+                        passNoService = item.service_number !== 1 && item.service_number !== 2 && item.service_number !== 3 && item.service_number !== 4 && item.service_number !== 5 && item.service_number !== 6 && item.service_number !== 7
                     }
 
                     if (category && category.length > 0 && !!item.category) {

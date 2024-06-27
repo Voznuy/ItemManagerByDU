@@ -26,15 +26,33 @@ class FieldNames:
                       and not v in restricted and not 'server' in v])
 
 
-class SERVICES:
-    vnlz = "ВНЛЗ"
-    sz = "СЗ"
-
-
 SERVICE_TO_NUMBER_MAPPER = {
-    SERVICES.vnlz: 1,
-    SERVICES.sz: 2
+    SERVICES.pc: 1,
+    SERVICES.sz: 2,
+    SERVICES.ciz: 3,
+    SERVICES.rc: 4,
+    SERVICES.rao: 5,
+    SERVICES.tzo: 6,
+    SERVICES.mc: 7
 }
+
+class SERVICES:
+    pc = "ПС"
+    sz = "СЗ"
+    ciz = "СІЗ"
+    rc = "РС"
+    rao = "РАО"
+    tzo = "ТЗО"
+    mc = "МС"
+
+
+                        # <MenuItem value={"ПС"}>Пожежна служба</MenuItem>
+                        # <MenuItem value={"СЗ"}>Служба зв'язку</MenuItem>
+                        # <MenuItem value={"СІЗ"}>Служба інфраструктурного забезпечення</MenuItem>
+                        # <MenuItem value={"РС"}>Речова служба</MenuItem>
+                        # <MenuItem value={"РАО"}>РАО</MenuItem>
+                        # <MenuItem value={"ТЗО"}>ТЗО</MenuItem>
+                        # <MenuItem value={"МС"}>Медична служба</MenuItem>
 
 
 class Item:

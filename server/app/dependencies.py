@@ -21,8 +21,13 @@ MM = MongoManager()
 
 
 class Service(str, Enum):
+    PC = "ПС"
     SZ = "СЗ"
-    VNLZ = "ВНЛЗ"
+    CIZ = "СІЗ"
+    RS = "РС"
+    RAO = "РАО"
+    TZO = "ТЗО"
+    MC = "МС"
 
 
 class NoteRequest(BaseModel):
@@ -56,7 +61,7 @@ class CreateItemRequest(BaseModel):
         schema_extra = {
             'example': {
                 'name': 'щось новеньке',
-                'service': 'ВНЛЗ',
+                'service': 'СЗ',
                 'inventory_number': "123456"
             }
         }

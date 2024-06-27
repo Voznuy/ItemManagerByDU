@@ -7,7 +7,7 @@ export default function Header(){
             <div className="header-left-menu" />
             <img src={logoImage} alt={"logo"} className={"image-logo"}
                  onClick={()=>{window.location.replace("/")}}/>
-            <h1>Mайно кафедри </h1>
+            <h1>Mайно ЦІКТ </h1>
             <Login />
         </header>
     )

@@ -13,7 +13,6 @@ export const CATEGORIES = {
     COMPUTERS: 'computers',
     PROJECTORS: 'projectors',
     COMMUNICATIONS: 'communications',
-    SEDO: 'СЕДО',
     SOFT: 'software'
 }
 
@@ -24,8 +23,13 @@ export const FIELDS = {
     SERIAL: "заводський номер",
 }
 export const SERVICE_TO_NUMBER = {
-    "VNLZ": 1,
-    "SZ": 2
+    "pc" : 1,
+    "sz" : 2,
+    "ciz" : 3,
+    "rc" : 4,
+    "rao" : 5,
+    "tzo" : 6,
+    "mc" : 7
 }
 
 export const ALERT_LEVEL = {
