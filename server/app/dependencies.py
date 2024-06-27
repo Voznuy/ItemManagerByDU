@@ -68,8 +68,13 @@ class CreateItemRequest(BaseModel):
 
     def get_service(self):
         mapper = {
+            Service.PC: SERVICES.pc,
             Service.SZ: SERVICES.sz,
-            Service.VNLZ: SERVICES.vnlz
+            Service.CIZ: SERVICES.ciz,
+            Service.RS: SERVICES.rs,
+            Service.RAO: SERVICES.rao,
+            Service.TZO: SERVICES.tzo,
+            Service.MC: SERVICES.mc,
         }
         return mapper.get(self.service)
 

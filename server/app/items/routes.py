@@ -69,10 +69,20 @@ def filter_items(filters: dict = Depends(get_filters_from_request)):
         if younger_than:
             query.update(QueryBuilder.younger_than_query(younger_than))
     if service:
+        if service == "PC":
+            service = SERVICES.pc
         if service == "SZ":
             service = SERVICES.sz
-        if service == "VNLZ":
-            service = SERVICES.vnlz
+        if service == "CIZ":
+            service = SERVICES.ciz
+        if service == "RS":
+            service = SERVICES.rs
+        if service == "RAO":
+            service = SERVICES.rao
+        if service == "TZO":
+            service = SERVICES.tzo
+        if service == "MC":
+            service = SERVICES.mc
         query.update({FieldNames.service: service})
     if category:
         query.update(QueryBuilder.category_query(category))
