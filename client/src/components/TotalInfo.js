@@ -19,6 +19,21 @@ function TotalInfo() {
     const counterSZ = () => {
         return serviceCounter(items, 2)
     }
+    const counterCIZ = () => {
+        return serviceCounter(items, 3)
+    }
+    const counterRC = () => {
+        return serviceCounter(items, 4)
+    }
+    const counterRAO = () => {
+        return serviceCounter(items, 5)
+    }
+    const counterTZO = () => {
+        return serviceCounter(items, 6)
+    }
+    const counterMC = () => {
+        return serviceCounter(items, 7)
+    }
 
     return(
         <div className={"search-handlers"}>
