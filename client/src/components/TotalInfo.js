@@ -13,7 +13,7 @@ function TotalInfo() {
     const store = useContext(StoreContext)
     const {items, pending} = store
 
-    const counterVNLZ = () => {
+    const counterPC = () => {
         return serviceCounter(items, 1)
     }
     const counterSZ = () => {
@@ -25,8 +25,13 @@ function TotalInfo() {
             <div className={"info-total"} >
             Всього: {pending? <Loader /> : items.length}
             </div>
-            <div className={"info-vnlz"}>&#10687; - ВНЛЗ: {pending? <Loader /> :counterVNLZ()} </div>
-            <div className={"info-sz"}>&#10687; - Служба зв'язку: {pending?<Loader /> : counterSZ()}</div>
+            <div className={"info-sz"}>&#10687; - пежежна служба: {pending? <Loader /> :counterPC()}</div>
+            <div className={"info-sz"}>&#10687; - служба зв'язку: {pending?<Loader /> : counterSZ()}</div>
+            <div className={"info-sz"}>&#10687; - кес: {pending? <Loader /> :counterCIZ()}</div>
+            <div className={"info-sz"}>&#10687; - речова служба: {pending? <Loader /> :counterRC()}</div>
+            <div className={"info-sz"}>&#10687; - рао: {pending? <Loader /> :counterRAO()}</div>
+            <div className={"info-sz"}>&#10687; - тзо: {pending? <Loader /> :counterTZO()}</div>
+            <div className={"info-sz"}>&#10687; - медична служба: {pending? <Loader /> :counterMC()}</div>
         </div>
     )
 }
