@@ -160,43 +160,42 @@ function SearchFilterBlock() {
                     </div>
                     <FormControl variant="filled">
                         <FormLabel style={{fontWeight: 600}}>Фільтрувати за службою</FormLabel>
-                        <RadioGroup name="serviceRadioGroup"
+                            <RadioGroup name="serviceRadioGroup"
                                     onChange={handleServiceChange}>
-                            <FormControlLabel
-                                control={<Radio checked={selectedService === "VNLZ"} onClick={handleServiceChange}/>}
-                                value="VNLZ"
-                                label={"Тільки ВНЛЗ"}/>
-                            <FormControlLabel
-                                control={<Radio checked={selectedService === "SZ"} onClick={handleServiceChange}/>}
-                                value="SZ"
-                                label="Тільки Служба зв'язку"/>
-                            <FormControlLabel
-                                control={<Radio checked={selectedService === "noService"}
-                                                onClick={handleServiceChange}/>}
-                                value="noService"
-                                label="Не на обліку"/>
-                        </RadioGroup>
-                        <FormLabel style={{fontWeight: 600}}>Фільтрувати за категоріями</FormLabel>
-                        <FormControlLabel
-                            control={<Checkbox checked={computersChecker} onChange={handleCategoryChange}/>}
-                            value={CATEGORIES.COMPUTERS}
-                            label="Комп'ютери"/>
-                        <FormControlLabel
-                            control={<Checkbox checked={projectorsChecker} onChange={handleCategoryChange}/>}
-                            value={CATEGORIES.PROJECTORS}
-                            label="Проектори"/>
-                        <FormControlLabel
-                            control={<Checkbox checked={communicationsChecker} onChange={handleCategoryChange}/>}
-                            value={CATEGORIES.COMMUNICATIONS}
-                            label="Комм. обладнання"/>
-                        <FormControlLabel
-                            control={<Checkbox checked={sedoChecker} onChange={handleCategoryChange}/>}
-                            value={CATEGORIES.SEDO}
-                            label="Обладнання СЕДО"/>
-                        <FormControlLabel
-                            control={<Checkbox checked={softChecker} onChange={handleCategoryChange}/>}
-                            value={CATEGORIES.SOFT}
-                            label="Програмне забезпечення"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "PC"} onClick={handleServiceChange}/>}
+                                    value="PC"
+                                    label={"Тільки пожежна служба"}/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "SZ"} onClick={handleServiceChange}/>}
+                                    value="SZ"
+                                    label="Тільки служба зв'язку"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "CIZ"} onClick={handleServiceChange}/>}
+                                    value="CIZ"
+                                    label="Служба інфраструктурного забезпечення"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "RC"} onClick={handleServiceChange}/>}
+                                    value="RC"
+                                    label="Тільки речова служба"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "RAO"} onClick={handleServiceChange}/>}
+                                    value="RAO"
+                                    label="Тільки РАО"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "TZO"} onClick={handleServiceChange}/>}
+                                    value="TZO"
+                                    label="Тільки Служба ТЗО"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "MC"} onClick={handleServiceChange}/>}
+                                    value="MC"
+                                    label="Тільки медична служба"/>
+                                <FormControlLabel
+                                    control={<Radio checked={selectedService === "noService"}
+                                                    onClick={handleServiceChange}/>}
+                                    value="noService"
+                                    label="Не на обліку"/>
+                            </RadioGroup>
                     </FormControl>
                 </DialogContent>
                 <DialogActions>

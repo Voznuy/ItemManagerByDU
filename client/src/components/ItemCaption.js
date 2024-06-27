@@ -32,11 +32,3 @@ export default function ItemCaption (props){
         </div>
     )
 }
-
-//                        <MenuItem value={"ПС"}>Пожежна служба</MenuItem>
-//                        <MenuItem value={"СЗ"}>Служба зв'язку</MenuItem>
-//                        <MenuItem value={"СІЗ"}>Служба інфраструктурного забезпечення</MenuItem>
-//                        <MenuItem value={"РС"}>Речова служба</MenuItem>
-//                        <MenuItem value={"РАО"}>РАО</MenuItem>
-//                        <MenuItem value={"ТЗО"}>ТЗО</MenuItem>
-//                        <MenuItem value={"МС"}>Медична служба</MenuItem>
